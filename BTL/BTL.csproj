@@ -78,6 +78,12 @@
     <Compile Include="Show_Info_Pattern.Designer.cs">
       <DependentUpon>Show_Info_Pattern.cs</DependentUpon>
     </Compile>
+    <Compile Include="testdb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testdb.Designer.cs">
+      <DependentUpon>testdb.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddPattern.resx">
       <DependentUpon>AddPattern.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Show_Info_Pattern.resx">
       <DependentUpon>Show_Info_Pattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testdb.resx">
+      <DependentUpon>testdb.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

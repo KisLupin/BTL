@@ -36,9 +36,7 @@
             // 
             // tb1_user
             // 
-            this.tb1_user.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tb1_user.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tb1_user.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.tb1_user.Location = new System.Drawing.Point(487, 557);
             this.tb1_user.Name = "tb1_user";
@@ -51,11 +49,9 @@
             // 
             // tb2_pass
             // 
-            this.tb2_pass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tb2_pass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tb2_pass.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tb2_pass.Location = new System.Drawing.Point(487, 698);
+            this.tb2_pass.Location = new System.Drawing.Point(487, 766);
             this.tb2_pass.Name = "tb2_pass";
             this.tb2_pass.Size = new System.Drawing.Size(1104, 26);
             this.tb2_pass.TabIndex = 1;
@@ -67,28 +63,26 @@
             // label1
             // 
             this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(391, 160);
+            this.label1.Location = new System.Drawing.Point(744, 219);
             this.label1.MinimumSize = new System.Drawing.Size(128, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1345, 263);
+            this.label1.Size = new System.Drawing.Size(585, 81);
             this.label1.TabIndex = 2;
             this.label1.Text = "Bệnh Viện Đa Khoa";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.UseWaitCursor = true;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // bt1
             // 
-            this.bt1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt1.Location = new System.Drawing.Point(585, 842);
+            this.bt1.Location = new System.Drawing.Point(621, 958);
             this.bt1.Name = "bt1";
-            this.bt1.Size = new System.Drawing.Size(903, 215);
+            this.bt1.Size = new System.Drawing.Size(903, 109);
             this.bt1.TabIndex = 3;
             this.bt1.Text = "Đăng Nhập";
             this.bt1.UseVisualStyleBackColor = true;
