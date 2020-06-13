@@ -38,20 +38,33 @@ namespace BTL
         }
 
         private string db = "Data Source=localhost\\MSSQLSERVER01;Initial Catalog=benh_vien;Integrated Security=True";
-        private SqlDataAdapter da;
-        private SqlDataReader rd;
+        private string q = "select * from Users where username =";
         private void click_login(object sender, MouseEventArgs e)
         {
             SqlConnection con = new SqlConnection(db);
             con.Open();
             if (con.State == System.Data.ConnectionState.Open)
             {
-                string q = "select * from Users where username=" + "'" + tb1_user.Text.ToString() + "'";
-                SqlCommand cmd = new SqlCommand(q, con);
-                Console.WriteLine("connect success");
-                da = new SqlDataAdapter(cmd);
-                rd = cmd.ExecuteReader();
-               
+                SqlCommand cmd = new SqlCommand();
+                q = q + "'" + tb1_user.Text + "'";
+                cmd.Connection = con;
+                cmd.CommandText = q;
+
+                DataTable dt = new DataTable();
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                adp.Fill(dt);
+
+                var user = new Users();
+                user.password_ = Convert.ToString(dt.Rows[0]["password"]);
+
+
+                if(user.password_ == tb2_pass.Text)
+                {
+                    Application.Exit();
+                    Application.EnableVisualStyles();
+                    Application.SetCompatibleTextRenderingDefault(false);
+                    Application.Run(new Option());
+                }
             }
         }
 
