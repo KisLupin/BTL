@@ -57,14 +57,6 @@ namespace BTL
                 var user = new Users();
                 user.password_ = Convert.ToString(dt.Rows[0]["password"]);
 
-
-                if(user.password_ == tb2_pass.Text)
-                {
-                    Application.Exit();
-                    Application.EnableVisualStyles();
-                    Application.SetCompatibleTextRenderingDefault(false);
-                    Application.Run(new Option());
-                }
             }
         }
 

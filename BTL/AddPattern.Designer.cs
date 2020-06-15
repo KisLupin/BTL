@@ -32,7 +32,6 @@
             this.bt_update_info = new System.Windows.Forms.Button();
             this.tb_num = new System.Windows.Forms.TextBox();
             this.tb_address = new System.Windows.Forms.TextBox();
-            this.tx_msbn = new System.Windows.Forms.TextBox();
             this.tb_age = new System.Windows.Forms.TextBox();
             this.tb_cmt = new System.Windows.Forms.TextBox();
             this.tb_ht = new System.Windows.Forms.TextBox();
@@ -49,6 +48,7 @@
             this.bt_back_munu_info.TabIndex = 18;
             this.bt_back_munu_info.Text = "Trở Về Menu Thông Tin Bệnh Nhân";
             this.bt_back_munu_info.UseVisualStyleBackColor = true;
+            this.bt_back_munu_info.Click += new System.EventHandler(this.back);
             // 
             // bt_update_info
             // 
@@ -59,6 +59,7 @@
             this.bt_update_info.TabIndex = 17;
             this.bt_update_info.Text = "Thêm Bệnh Nhân Mới";
             this.bt_update_info.UseVisualStyleBackColor = true;
+            this.bt_update_info.Click += new System.EventHandler(this.add_click);
             // 
             // tb_num
             // 
@@ -83,17 +84,6 @@
             this.tb_address.Text = "Địa Chỉ";
             this.tb_address.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tx_msbn
-            // 
-            this.tx_msbn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_msbn.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tx_msbn.Location = new System.Drawing.Point(1195, 417);
-            this.tx_msbn.Name = "tx_msbn";
-            this.tx_msbn.Size = new System.Drawing.Size(452, 35);
-            this.tx_msbn.TabIndex = 14;
-            this.tx_msbn.Text = "Mã Số Bệnh Nhân ";
-            this.tx_msbn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // tb_age
             // 
             this.tb_age.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,8 +92,9 @@
             this.tb_age.Name = "tb_age";
             this.tb_age.Size = new System.Drawing.Size(281, 35);
             this.tb_age.TabIndex = 13;
-            this.tb_age.Text = "Ngày Tháng Năm Sinh";
+            this.tb_age.Text = "Tuoi";
             this.tb_age.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_age.TextChanged += new System.EventHandler(this.tb_age_TextChanged);
             // 
             // tb_cmt
             // 
@@ -160,7 +151,6 @@
             this.Controls.Add(this.bt_update_info);
             this.Controls.Add(this.tb_num);
             this.Controls.Add(this.tb_address);
-            this.Controls.Add(this.tx_msbn);
             this.Controls.Add(this.tb_age);
             this.Controls.Add(this.tb_cmt);
             this.Controls.Add(this.tb_ht);
@@ -178,7 +168,6 @@
         private System.Windows.Forms.Button bt_update_info;
         private System.Windows.Forms.TextBox tb_num;
         private System.Windows.Forms.TextBox tb_address;
-        private System.Windows.Forms.TextBox tx_msbn;
         private System.Windows.Forms.TextBox tb_age;
         private System.Windows.Forms.TextBox tb_cmt;
         private System.Windows.Forms.TextBox tb_ht;

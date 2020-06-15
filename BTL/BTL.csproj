@@ -62,6 +62,16 @@
     <Compile Include="AddPattern.Designer.cs">
       <DependentUpon>AddPattern.cs</DependentUpon>
     </Compile>
+    <Compile Include="benh_vienDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>benh_vienDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="benh_vienDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>benh_vienDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +92,12 @@
     <Compile Include="search_add_pattern.Designer.cs">
       <DependentUpon>search_add_pattern.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAll.Designer.cs">
+      <DependentUpon>ShowAll.cs</DependentUpon>
+    </Compile>
     <Compile Include="Show_Info_Pattern.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +110,7 @@
     <Compile Include="testdb.Designer.cs">
       <DependentUpon>testdb.cs</DependentUpon>
     </Compile>
+    <Compile Include="trannfer.cs" />
     <Compile Include="Users.cs" />
     <EmbeddedResource Include="AddPattern.resx">
       <DependentUpon>AddPattern.cs</DependentUpon>
@@ -116,12 +133,37 @@
     <EmbeddedResource Include="search_add_pattern.resx">
       <DependentUpon>search_add_pattern.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShowAll.resx">
+      <DependentUpon>ShowAll.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Show_Info_Pattern.resx">
       <DependentUpon>Show_Info_Pattern.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="testdb.resx">
       <DependentUpon>testdb.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="benh_vienDataSet.xsc">
+      <DependentUpon>benh_vienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="benh_vienDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>benh_vienDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="benh_vienDataSet.xss">
+      <DependentUpon>benh_vienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="benh_vienDataSet1.xsc">
+      <DependentUpon>benh_vienDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="benh_vienDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>benh_vienDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="benh_vienDataSet1.xss">
+      <DependentUpon>benh_vienDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
